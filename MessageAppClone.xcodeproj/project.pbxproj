@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		194EF837CEE4E2A39FF1E112 /* Pods_MessageAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07414B710338EA421D82269A /* Pods_MessageAppClone.framework */; };
+		1E6CCDC32885C0780001C81E /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6CCDC22885C0780001C81E /* LoginManager.swift */; };
+		1E6CCDC82885C0830001C81E /* SignupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6CCDC72885C0830001C81E /* SignupManager.swift */; };
 		1E9947E52885BD8600BA88B3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9947E42885BD8600BA88B3 /* LoginPresenter.swift */; };
 		1EDFCCC72885A5AB00053E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCC62885A5AB00053E7E /* AppDelegate.swift */; };
 		1EDFCCC92885A5AB00053E7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCC82885A5AB00053E7E /* SceneDelegate.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		027AC0E35D8034B483CE183B /* Pods-MessageAppClone-MessageAppCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageAppClone-MessageAppCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-MessageAppClone-MessageAppCloneUITests/Pods-MessageAppClone-MessageAppCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		07414B710338EA421D82269A /* Pods_MessageAppClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageAppClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6CCDC22885C0780001C81E /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		1E6CCDC72885C0830001C81E /* SignupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupManager.swift; sourceTree = "<group>"; };
 		1E9947E42885BD8600BA88B3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		1EDFCCC32885A5AB00053E7E /* MessageAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDFCCC62885A5AB00053E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		1EDFCD1F2885B15B00053E7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1E6CCDC22885C0780001C81E /* LoginManager.swift */,
+				1E6CCDC72885C0830001C81E /* SignupManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,10 +454,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6CCDC32885C0780001C81E /* LoginManager.swift in Sources */,
 				1E9947E52885BD8600BA88B3 /* LoginPresenter.swift in Sources */,
 				1EDFCCCB2885A5AB00053E7E /* LoginViewController.swift in Sources */,
 				1EDFCCC72885A5AB00053E7E /* AppDelegate.swift in Sources */,
 				1EDFCCC92885A5AB00053E7E /* SceneDelegate.swift in Sources */,
+				1E6CCDC82885C0830001C81E /* SignupManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

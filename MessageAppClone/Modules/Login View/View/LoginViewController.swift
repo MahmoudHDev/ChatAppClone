@@ -59,8 +59,15 @@ class LoginViewController: UIViewController {
     @IBAction func signBtns (_ sender: UIButton) {
         switch sender.tag{
         case 0:
-            print("signup ")
+            print("signup")
+            guard let name = username.text,
+                  let email = email.text,
+                  let pass = password.text else { return }
+            presenter?.signup(username: name, email: email, password: pass)
         case 1:
+            guard let email = email.text,
+                  let pass = password.text else { return }
+            presenter?.signin(username: email, password: pass)
             print("Signin")
         default:
             // default tag is 2
@@ -73,6 +80,16 @@ class LoginViewController: UIViewController {
 //MARK:- Presenter
 
 extension LoginViewController: LoginPresenterPr {
+    
+    func suceessfullySignIn() {
+        print("present new storyboard")
+    }
+    
+    func failedSignIn(er: String) {
+        errorMessage.isHidden = false
+        errorMessage.text = er
+    }
+    
     
 }
 
