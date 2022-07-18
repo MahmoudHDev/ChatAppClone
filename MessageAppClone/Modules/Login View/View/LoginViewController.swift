@@ -20,14 +20,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var errorMessage     : UILabel!
     
     //MARK:- Properties
-    
+    var presenter: LoginPresenterView?
     
     
     //MARK:- View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        presenter = LoginPresenterView(view: self)
+
     }
     
     
@@ -40,11 +42,13 @@ class LoginViewController: UIViewController {
             forgotPassword.isHidden = true
             signbtn.tag = 0
             signbtn.setTitle("Signup", for: .normal)
+            
         case 1:
             username.isHidden       = true
             forgotPassword.isHidden = false
             signbtn.tag = 1
             signbtn.setTitle("Signin", for: .normal)
+
         default:
             print("Nothing")
         }
@@ -65,3 +69,10 @@ class LoginViewController: UIViewController {
     }
     
 }
+
+//MARK:- Presenter
+
+extension LoginViewController: LoginPresenterPr {
+    
+}
+
