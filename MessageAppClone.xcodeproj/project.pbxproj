@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		194EF837CEE4E2A39FF1E112 /* Pods_MessageAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07414B710338EA421D82269A /* Pods_MessageAppClone.framework */; };
-		1E6CCDC32885C0780001C81E /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6CCDC22885C0780001C81E /* LoginManager.swift */; };
-		1E6CCDC82885C0830001C81E /* SignupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6CCDC72885C0830001C81E /* SignupManager.swift */; };
+		1E2560A2288A9851004C5568 /* SignProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2560A1288A9851004C5568 /* SignProtocol.swift */; };
+		1E2560A7288A98EE004C5568 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2560A6288A98EE004C5568 /* Sign.swift */; };
 		1E9947E52885BD8600BA88B3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9947E42885BD8600BA88B3 /* LoginPresenter.swift */; };
 		1EDFCCC72885A5AB00053E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCC62885A5AB00053E7E /* AppDelegate.swift */; };
 		1EDFCCC92885A5AB00053E7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCC82885A5AB00053E7E /* SceneDelegate.swift */; };
@@ -19,6 +19,10 @@
 		1EDFCCD32885A5AF00053E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDFCCD12885A5AF00053E7E /* LaunchScreen.storyboard */; };
 		1EDFCCDE2885A5AF00053E7E /* MessageAppCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCDD2885A5AF00053E7E /* MessageAppCloneTests.swift */; };
 		1EDFCCFD2885A72F00053E7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EDFCCFC2885A72F00053E7E /* GoogleService-Info.plist */; };
+		1EFDBACF2889EA320029A0E7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDBACE2889EA320029A0E7 /* Home.storyboard */; };
+		1EFDBAD72889EA600029A0E7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDBAD62889EA600029A0E7 /* HomeTableViewController.swift */; };
+		1EFDBAE32889EC2E0029A0E7 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDBAE22889EC2E0029A0E7 /* Contacts.storyboard */; };
+		1EFDBAE82889EC840029A0E7 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDBAE72889EC840029A0E7 /* ContactsTableViewController.swift */; };
 		77A11AEFA2911D5EF904B6CC /* Pods_MessageAppCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBAC72D59609946F357769B /* Pods_MessageAppCloneTests.framework */; };
 		9E8501A8E0DA05A2AAB29D40 /* Pods_MessageAppClone_MessageAppCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58855E3DA627493730064599 /* Pods_MessageAppClone_MessageAppCloneUITests.framework */; };
 /* End PBXBuildFile section */
@@ -43,8 +47,8 @@
 /* Begin PBXFileReference section */
 		027AC0E35D8034B483CE183B /* Pods-MessageAppClone-MessageAppCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageAppClone-MessageAppCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-MessageAppClone-MessageAppCloneUITests/Pods-MessageAppClone-MessageAppCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		07414B710338EA421D82269A /* Pods_MessageAppClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageAppClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E6CCDC22885C0780001C81E /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
-		1E6CCDC72885C0830001C81E /* SignupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupManager.swift; sourceTree = "<group>"; };
+		1E2560A1288A9851004C5568 /* SignProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignProtocol.swift; sourceTree = "<group>"; };
+		1E2560A6288A98EE004C5568 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 		1E9947E42885BD8600BA88B3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		1EDFCCC32885A5AB00053E7E /* MessageAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDFCCC62885A5AB00053E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,10 @@
 		1EDFCCDF2885A5AF00053E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EDFCCE42885A5AF00053E7E /* MessageAppCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageAppCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDFCCFC2885A72F00053E7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1EFDBACE2889EA320029A0E7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1EFDBAD62889EA600029A0E7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		1EFDBAE22889EC2E0029A0E7 /* Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		1EFDBAE72889EC840029A0E7 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		3B124E5FF04E2F23BE76EE15 /* Pods-MessageAppCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageAppCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-MessageAppCloneTests/Pods-MessageAppCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58855E3DA627493730064599 /* Pods_MessageAppClone_MessageAppCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageAppClone_MessageAppCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5991A06832E5C04973CD4757 /* Pods-MessageAppClone-MessageAppCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageAppClone-MessageAppCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-MessageAppClone-MessageAppCloneUITests/Pods-MessageAppClone-MessageAppCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +148,8 @@
 		1EDFCD1D2885B13300053E7E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1EFDBADB2889EBFA0029A0E7 /* Contacts View */,
+				1EFDBACA2889E9C10029A0E7 /* Home View */,
 				1EDFCD252885B28E00053E7E /* Resources */,
 				1EDFCD1E2885B13A00053E7E /* Login View */,
 			);
@@ -159,8 +169,8 @@
 		1EDFCD1F2885B15B00053E7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1E6CCDC22885C0780001C81E /* LoginManager.swift */,
-				1E6CCDC72885C0830001C81E /* SignupManager.swift */,
+				1E2560A1288A9851004C5568 /* SignProtocol.swift */,
+				1E2560A6288A98EE004C5568 /* Sign.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +200,72 @@
 				1EDFCCCF2885A5AF00053E7E /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EFDBACA2889E9C10029A0E7 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				1EFDBACD2889EA1E0029A0E7 /* Model */,
+				1EFDBACC2889EA120029A0E7 /* View */,
+				1EFDBACB2889EA0B0029A0E7 /* Presenter */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		1EFDBACB2889EA0B0029A0E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1EFDBACC2889EA120029A0E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EFDBACE2889EA320029A0E7 /* Home.storyboard */,
+				1EFDBAD62889EA600029A0E7 /* HomeTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EFDBACD2889EA1E0029A0E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EFDBADB2889EBFA0029A0E7 /* Contacts View */ = {
+			isa = PBXGroup;
+			children = (
+				1EFDBADE2889EC170029A0E7 /* Model */,
+				1EFDBADD2889EC140029A0E7 /* View */,
+				1EFDBADC2889EC0E0029A0E7 /* Presenter */,
+			);
+			path = "Contacts View";
+			sourceTree = "<group>";
+		};
+		1EFDBADC2889EC0E0029A0E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1EFDBADD2889EC140029A0E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EFDBAE22889EC2E0029A0E7 /* Contacts.storyboard */,
+				1EFDBAE72889EC840029A0E7 /* ContactsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EFDBADE2889EC170029A0E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B47D52C88791E2B2D2036718 /* Frameworks */ = {
@@ -324,7 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EDFCCD32885A5AF00053E7E /* LaunchScreen.storyboard in Resources */,
+				1EFDBACF2889EA320029A0E7 /* Home.storyboard in Resources */,
 				1EDFCCFD2885A72F00053E7E /* GoogleService-Info.plist in Resources */,
+				1EFDBAE32889EC2E0029A0E7 /* Contacts.storyboard in Resources */,
 				1EDFCCD02885A5AF00053E7E /* Assets.xcassets in Resources */,
 				1EDFCCCE2885A5AB00053E7E /* Main.storyboard in Resources */,
 			);
@@ -454,12 +532,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6CCDC32885C0780001C81E /* LoginManager.swift in Sources */,
 				1E9947E52885BD8600BA88B3 /* LoginPresenter.swift in Sources */,
 				1EDFCCCB2885A5AB00053E7E /* LoginViewController.swift in Sources */,
 				1EDFCCC72885A5AB00053E7E /* AppDelegate.swift in Sources */,
+				1EFDBAD72889EA600029A0E7 /* HomeTableViewController.swift in Sources */,
 				1EDFCCC92885A5AB00053E7E /* SceneDelegate.swift in Sources */,
-				1E6CCDC82885C0830001C81E /* SignupManager.swift in Sources */,
+				1E2560A2288A9851004C5568 /* SignProtocol.swift in Sources */,
+				1E2560A7288A98EE004C5568 /* Sign.swift in Sources */,
+				1EFDBAE82889EC840029A0E7 /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,49 +9,46 @@ import Foundation
 
 protocol LoginPresenterPr {
     // will deal with view
-    func suceessfullySignIn()
-    func failedSignIn(er: String)
-
+    func suceessfullySign()
+    func failedSign(er: String)
 }
 
 //MARK:- Presenter
 
-class LoginPresenterView: SignupManagerPr, LoginManagerPr {
-
-        
+class LoginPresenterView: SignProtocol {
     //MARK:- Properties
-    var view: LoginPresenterPr?
-    
-    let signupManager = SignupManager()
-    let loginManager  = LoginManager()
+    var view    : LoginPresenterPr?
+    var sign    = Sign()
+
     
     //MARK:- Init
     init(view: LoginPresenterPr) {
         self.view = view
-        self.signupManager.delegate = self
+        sign.delegate = self
     }
     
     //MARK:- Methods
     
+    func signIn(email: String, password: String) {
+        sign.signIn(email: email, password: password)
+    }
+    
     func signup(username: String, email: String, password: String) {
-        signupManager.signup(username: username, email: email, password: password)
-    }
-    
-    func signin(username: String, password: String) {
-        loginManager.signin(username: username, password: password)
+        sign.signup(username: username, email: email, password: password)
     }
     
 }
-//MARK:- Extension
+//MARK:- Add Heading
 
-extension LoginPresenterView: SignUpResults {
-    
-    func successSignup(email: String) {
-        self.view?.suceessfullySignIn()
+extension LoginPresenterView: results {
+    func userDidLogSuccessfully(email: String) {
+        self.view?.suceessfullySign()
     }
     
-    func failedSignup(error: String) {
-        self.view?.failedSignIn(er: error)
+    func errorWhileLogging(er: String) {
+        self.view?.failedSign(er: er)
     }
+    
     
 }
+

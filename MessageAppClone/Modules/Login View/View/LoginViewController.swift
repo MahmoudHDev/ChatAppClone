@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
         case 1:
             guard let email = email.text,
                   let pass = password.text else { return }
-            presenter?.signin(username: email, password: pass)
+            presenter?.signIn(email: email, password: pass)
             print("Signin")
         default:
             // default tag is 2
@@ -81,15 +81,17 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginPresenterPr {
     
-    func suceessfullySignIn() {
+    func suceessfullySign() {
+        let storyBoard = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(identifier: "homeView")
+        self.dismiss(animated: true, completion: nil)
+        present(storyBoard, animated: true, completion: nil)
         print("present new storyboard")
     }
     
-    func failedSignIn(er: String) {
+    func failedSign(er: String) {
         errorMessage.isHidden = false
         errorMessage.text = er
     }
-    
     
 }
 
