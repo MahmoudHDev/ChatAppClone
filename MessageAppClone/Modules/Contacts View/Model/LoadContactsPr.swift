@@ -8,6 +8,8 @@
 import Foundation
 
 protocol LoadContactsPr {
+    
     func loadKeys()
-    func fetchUsers()
+    func fetchUsers(ids: [String])
+    
 }

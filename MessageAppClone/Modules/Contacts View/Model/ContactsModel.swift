@@ -8,6 +8,9 @@
 import Foundation
 
 struct ContactsModel {
+    
     let username: String
     let email   : String
+    let userId  : String
+    
 }

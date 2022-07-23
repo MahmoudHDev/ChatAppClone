@@ -16,7 +16,8 @@ protocol ContactsPresenterPr {
 
 class ContactsPresenterView {
     //MARK:- Properties
-    var view:ContactsPresenterPr?
+    var view: ContactsPresenterPr?
+    let loadContacts = LoadContacts()
     
     //MARK:- init
     init(view: ContactsPresenterPr) {
@@ -25,6 +26,8 @@ class ContactsPresenterView {
     
     //MARK:- Methods
     
-    
+    func loadusers() {
+        loadContacts.loadKeys()
+    }
 
 }

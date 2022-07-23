@@ -13,6 +13,8 @@
 		1E2560AC288ACDE8004C5568 /* HomePresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2560AB288ACDE7004C5568 /* HomePresenterView.swift */; };
 		1E37B3F4288C1E8A0083BBDF /* ContactsPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E37B3F3288C1E8A0083BBDF /* ContactsPresenterView.swift */; };
 		1E37B3F9288C20D20083BBDF /* LoadContactsPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E37B3F8288C20D20083BBDF /* LoadContactsPr.swift */; };
+		1E37B40E288C34790083BBDF /* LoadContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E37B40D288C34790083BBDF /* LoadContactsManager.swift */; };
+		1E37B413288C34C50083BBDF /* LoadContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E37B412288C34C50083BBDF /* LoadContacts.swift */; };
 		1E9947E52885BD8600BA88B3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9947E42885BD8600BA88B3 /* LoginPresenter.swift */; };
 		1EDFCCC72885A5AB00053E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCC62885A5AB00053E7E /* AppDelegate.swift */; };
 		1EDFCCC92885A5AB00053E7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFCCC82885A5AB00053E7E /* SceneDelegate.swift */; };
@@ -60,6 +62,8 @@
 		1E2560AB288ACDE7004C5568 /* HomePresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterView.swift; sourceTree = "<group>"; };
 		1E37B3F3288C1E8A0083BBDF /* ContactsPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPresenterView.swift; sourceTree = "<group>"; };
 		1E37B3F8288C20D20083BBDF /* LoadContactsPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadContactsPr.swift; sourceTree = "<group>"; };
+		1E37B40D288C34790083BBDF /* LoadContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadContactsManager.swift; sourceTree = "<group>"; };
+		1E37B412288C34C50083BBDF /* LoadContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadContacts.swift; sourceTree = "<group>"; };
 		1E9947E42885BD8600BA88B3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		1EDFCCC32885A5AB00053E7E /* MessageAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDFCCC62885A5AB00053E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +292,8 @@
 			children = (
 				1EFB8243288AD38500816B47 /* ContactsModel.swift */,
 				1E37B3F8288C20D20083BBDF /* LoadContactsPr.swift */,
+				1E37B40D288C34790083BBDF /* LoadContactsManager.swift */,
+				1E37B412288C34C50083BBDF /* LoadContacts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -562,6 +568,7 @@
 				1EFB822C288ACFCD00816B47 /* LoadDataPr.swift in Sources */,
 				1EDFCCCB2885A5AB00053E7E /* LoginViewController.swift in Sources */,
 				1EDFCCC72885A5AB00053E7E /* AppDelegate.swift in Sources */,
+				1E37B413288C34C50083BBDF /* LoadContacts.swift in Sources */,
 				1EFDBAD72889EA600029A0E7 /* HomeTableViewController.swift in Sources */,
 				1EFB8244288AD38500816B47 /* ContactsModel.swift in Sources */,
 				1EDFCCC92885A5AB00053E7E /* SceneDelegate.swift in Sources */,
@@ -571,6 +578,7 @@
 				1EFB823F288AD30100816B47 /* RecentMessages.swift in Sources */,
 				1EFB8231288AD02300816B47 /* ManageData.swift in Sources */,
 				1E2560A7288A98EE004C5568 /* Sign.swift in Sources */,
+				1E37B40E288C34790083BBDF /* LoadContactsManager.swift in Sources */,
 				1EFDBAE82889EC840029A0E7 /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

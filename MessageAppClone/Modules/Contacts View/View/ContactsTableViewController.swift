@@ -9,7 +9,8 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
     //MARK:- Outlets
-    var presenter: ContactsPresenterView?
+    var presenter   : ContactsPresenterView?
+    var users       = [ContactsModel]()
     
     //MARK:- View Life Cycle
 
@@ -22,7 +23,7 @@ class ContactsTableViewController: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-        return 0
+        return users.count
     }
 
     
