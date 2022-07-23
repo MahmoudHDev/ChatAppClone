@@ -16,9 +16,10 @@ protocol results {
 class Sign {
     
     //MARK:- Properties
-
     var delegate: results?
+    var db      = Database.database().reference()
     
+    //MARK:- Methods
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
             if let er = err {
@@ -38,6 +39,14 @@ class Sign {
                 self.delegate?.errorWhileLogging(er: er.localizedDescription)
             }else {
                 print("Successfully created in the Firebase")
+                guard let userId = Auth.auth().currentUser?.uid else { return }
+                let values: [String: Any] = [
+                    "userId"    : userId,
+                    "email"     : email,
+                    "username"  : username,
+                    "dateJoined": "\(Date())"
+                ]
+                self.db.child("users").child(userId).setValue(values)
                 self.delegate?.userDidLogSuccessfully(email: email)
             }
         }

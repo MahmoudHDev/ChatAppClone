@@ -19,7 +19,6 @@ class LoginPresenterView: SignProtocol {
     //MARK:- Properties
     var view    : LoginPresenterPr?
     var sign    = Sign()
-
     
     //MARK:- Init
     init(view: LoginPresenterPr) {
@@ -48,7 +47,5 @@ extension LoginPresenterView: results {
     func errorWhileLogging(er: String) {
         self.view?.failedSign(er: er)
     }
-    
-    
 }
 

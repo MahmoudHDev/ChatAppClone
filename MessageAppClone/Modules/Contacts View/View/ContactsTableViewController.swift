@@ -9,18 +9,19 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
     //MARK:- Outlets
-
+    var presenter: ContactsPresenterView?
     
     //MARK:- View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Contacts"
+        presenter = ContactsPresenterView(view: self)
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+    
         return 0
     }
 
@@ -36,3 +37,18 @@ class ContactsTableViewController: UITableViewController {
 
     
 }
+
+//MARK:- ViewPresenter
+extension ContactsTableViewController: ContactsPresenterPr {
+    
+    func usersDidLoad() {
+        print("User Did Load")
+    }
+    
+    func userFaildLoad() {
+        print("user Faild Load")
+    }
+    
+    
+}
+

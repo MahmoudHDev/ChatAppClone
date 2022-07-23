@@ -26,10 +26,8 @@ class LoginViewController: UIViewController {
     //MARK:- View Life Cycle
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
         presenter = LoginPresenterView(view: self)
-
     }
     
     
